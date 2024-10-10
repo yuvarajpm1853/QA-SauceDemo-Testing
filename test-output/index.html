@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-LoginSuite" class="navigator-link">
+              <span class="suite-name border-passed">LoginSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-LoginSuite" class="navigator-link ">
+                    <span>W:\eclipse\Project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-LoginSuite" class="navigator-link ">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-LoginSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-LoginSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-LoginSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-LoginSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-LoginSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-LoginSuite" class="hide-methods passed suite-LoginSuite"> (hide)</a> <!-- hide-methods passed suite-LoginSuite -->
+                      <a href="#" panel-name="suite-LoginSuite" class="show-methods passed suite-LoginSuite"> (show)</a> <!-- show-methods passed suite-LoginSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-LoginSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginSuite" title="test.Checkoutpagetest" class="method navigator-link" hash-for-method="checkoutFunctionality">checkoutFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginSuite" title="test.Productpagetest" class="method navigator-link" hash-for-method="logoutFunctionality">logoutFunctionality</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginSuite" title="test.Loginpagetest" class="method navigator-link" hash-for-method="verifyLoginFunctionality(invalid, ABCD, XYZ, Epic sadface: Username and password do not match any user in this service)">verifyLoginFunctionality(invalid, ABCD, XYZ, Epic sadface: Username and password do not match any user in this service)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginSuite" title="test.Loginpagetest" class="method navigator-link" hash-for-method="verifyLoginFunctionality(empty, , , Epic sadface: Username is required)">verifyLoginFunctionality(empty, , , Epic sadface: Username is required)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginSuite" title="test.Loginpagetest" class="method navigator-link" hash-for-method="verifyLoginFunctionality(emptyPWD, standard_user, , Epic sadface: Password is required)">verifyLoginFunctionality(emptyPWD, standard_user, , Epic sadface: Password is required)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LoginSuite" title="test.Loginpagetest" class="method navigator-link" hash-for-method="verifyLoginFunctionality(valid, standard_user, secret_sauce, https://www.saucedemo.com/v1/inventory.html)">verifyLoginFunctionality(valid, standard_user, secret_sauce, https://www.saucedemo.com/v1/inventory.html)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-LoginSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-LoginSuite" class="panel LoginSuite">
+          <div class="suite-LoginSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.Checkoutpagetest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutFunctionality">
+                  </a> <!-- checkoutFunctionality -->
+                  <span class="method-name">checkoutFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LoginSuite-class-passed -->
+          <div class="suite-LoginSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.Loginpagetest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginFunctionality(invalid, ABCD, XYZ, Epic sadface: Username and password do not match any user in this service)">
+                  </a> <!-- verifyLoginFunctionality(invalid, ABCD, XYZ, Epic sadface: Username and password do not match any user in this service) -->
+                  <span class="method-name">verifyLoginFunctionality</span>
+                  <span class="parameters">(invalid, ABCD, XYZ, Epic sadface: Username and password do not match any user in this service)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginFunctionality(empty, , , Epic sadface: Username is required)">
+                  </a> <!-- verifyLoginFunctionality(empty, , , Epic sadface: Username is required) -->
+                  <span class="method-name">verifyLoginFunctionality</span>
+                  <span class="parameters">(empty, , , Epic sadface: Username is required)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginFunctionality(emptyPWD, standard_user, , Epic sadface: Password is required)">
+                  </a> <!-- verifyLoginFunctionality(emptyPWD, standard_user, , Epic sadface: Password is required) -->
+                  <span class="method-name">verifyLoginFunctionality</span>
+                  <span class="parameters">(emptyPWD, standard_user, , Epic sadface: Password is required)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginFunctionality(valid, standard_user, secret_sauce, https://www.saucedemo.com/v1/inventory.html)">
+                  </a> <!-- verifyLoginFunctionality(valid, standard_user, secret_sauce, https://www.saucedemo.com/v1/inventory.html) -->
+                  <span class="method-name">verifyLoginFunctionality</span>
+                  <span class="parameters">(valid, standard_user, secret_sauce, https://www.saucedemo.com/v1/inventory.html)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LoginSuite-class-passed -->
+          <div class="suite-LoginSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.Productpagetest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logoutFunctionality">
+                  </a> <!-- logoutFunctionality -->
+                  <span class="method-name">logoutFunctionality</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LoginSuite-class-passed -->
+        </div> <!-- panel LoginSuite -->
+        <div panel-name="test-xml-LoginSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">W:\eclipse\Project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;LoginSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;library.ExtentReportManager&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginFunctionalityTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.Loginpagetest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- LoginFunctionalityTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;ProductFunctionalityTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.Productpagetest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ProductFunctionalityTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;CheckOutFunctionalityTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.Checkoutpagetest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CheckOutFunctionalityTest --&gt;
+&lt;/suite&gt; &lt;!-- LoginSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-LoginSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for LoginSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">LoginFunctionalityTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ProductFunctionalityTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CheckOutFunctionalityTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-LoginSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for LoginSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-LoginSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for LoginSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_LoginSuite');
+function tableData_LoginSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkoutFunctionality')
+data.setCell(0, 2, 'test.Checkoutpagetest')
+data.setCell(0, 3, 21497);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'logoutFunctionality')
+data.setCell(1, 2, 'test.Productpagetest')
+data.setCell(1, 3, 8479);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLoginFunctionality')
+data.setCell(2, 2, 'test.Loginpagetest')
+data.setCell(2, 3, 6013);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyLoginFunctionality')
+data.setCell(3, 2, 'test.Loginpagetest')
+data.setCell(3, 3, 2786);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLoginFunctionality')
+data.setCell(4, 2, 'test.Loginpagetest')
+data.setCell(4, 3, 2776);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyLoginFunctionality')
+data.setCell(5, 2, 'test.Loginpagetest')
+data.setCell(5, 3, 1833);
+window.suiteTableData['LoginSuite']= { tableData: data, tableDiv: 'times-div-LoginSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <div id="times-div-LoginSuite">
+              </div> <!-- times-div-LoginSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-LoginSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for LoginSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-LoginSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.Loginpagetest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyURL</span>
+                <br/>
+                <span class="ignored-method-name">verifyLogo</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-LoginSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Loginpagetest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">IntiliazeBrowser</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">54444 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionality(valid, standard_user, secret_sauce, https://www.saucedemo.com/v1/inventory.html)</span>
+                <span class="method-start">55807 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TCfailure([TestResult name=verifyLoginFunctionality status=SUCCESS method=Loginpagetest.verifyLoginFunctionali...)</span>
+                <span class="method-start">62069 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">62075 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">IntiliazeBrowser</span>
+                <span class="method-start">74019 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">99902 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionality(invalid, ABCD, XYZ, Epic sadface: Username and password do not match any user in this service)</span>
+                <span class="method-start">99907 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TCfailure([TestResult name=verifyLoginFunctionality status=SUCCESS method=Loginpagetest.verifyLoginFunctionali...)</span>
+                <span class="method-start">102711 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">102713 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">IntiliazeBrowser</span>
+                <span class="method-start">112352 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">140884 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionality(empty, , , Epic sadface: Username is required)</span>
+                <span class="method-start">140902 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TCfailure([TestResult name=verifyLoginFunctionality status=SUCCESS method=Loginpagetest.verifyLoginFunctionali...)</span>
+                <span class="method-start">143722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143724 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">IntiliazeBrowser</span>
+                <span class="method-start">147878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">175950 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginFunctionality(emptyPWD, standard_user, , Epic sadface: Password is required)</span>
+                <span class="method-start">175955 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TCfailure([TestResult name=verifyLoginFunctionality status=SUCCESS method=Loginpagetest.verifyLoginFunctionali...)</span>
+                <span class="method-start">177801 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">177802 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Productpagetest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">IntiliazeBrowser</span>
+                <span class="method-start">190755 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">214031 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">logoutFunctionality</span>
+                <span class="method-start">214099 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TCfailure([TestResult name=logoutFunctionality status=SUCCESS method=Productpagetest.logoutFunctionality()[pri...)</span>
+                <span class="method-start">222732 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">222734 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.Checkoutpagetest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">IntiliazeBrowser</span>
+                <span class="method-start">231418 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">259538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkoutFunctionality</span>
+                <span class="method-start">259600 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TCfailure([TestResult name=checkoutFunctionality status=SUCCESS method=Checkoutpagetest.checkoutFunctionality(...)</span>
+                <span class="method-start">281146 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">281146 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

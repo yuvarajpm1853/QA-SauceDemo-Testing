@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LoginSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="library.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="LoginFunctionalityTest(failed)">
+    <classes>
+      <class name="test.Loginpagetest">
+        <methods>
+          <include name="verifyLoginFunctionality" invocation-numbers="3"/>
+          <include name="IntiliazeBrowser"/>
+          <include name="TCfailure"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- test.Loginpagetest -->
+    </classes>
+  </test> <!-- LoginFunctionalityTest(failed) -->
+</suite> <!-- Failed suite [LoginSuite] -->
